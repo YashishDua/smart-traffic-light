@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "2Ae4bfJqmW2ktRsSP+ARgkr1JEc=",
+			"path": "github.com/go-chi/chi",
+			"revision": "def7567e149e3f66f2a3d62c6114e8d1731720c4",
+			"revisionTime": "2018-12-10T20:01:25Z"
+		}
+	],
+	"rootPath": "smart-signal"
+}
