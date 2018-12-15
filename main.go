@@ -10,6 +10,8 @@ import (
 
 func main() {
   router := chi.NewRouter()
+  port := os.Getenv("PORT")
+  log.Println(port)
   router.Get("/", util.ResponseWrapper(Hello))
   router.Get("/traffic/data", util.ResponseWrapper(endpoints.GetTrafficData))
   log.Fatal(http.ListenAndServe(":8000", router))
