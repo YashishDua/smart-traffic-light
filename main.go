@@ -3,6 +3,7 @@ package main
 import (
   "log"
   "net/http"
+  "os"
   "github.com/go-chi/chi"
   "smart-signal/util"
   "smart-signal/endpoints"
