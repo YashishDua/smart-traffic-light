@@ -15,6 +15,7 @@ func Response(w http.ResponseWriter, payload interface{}) {
 
 func Error(w http.ResponseWriter, err *HTTPError) {
   w.Header().Set("Content-Type", "application/json")
+  w.Header().Set("Access-Control-Allow-Origin", "*")
   w.WriteHeader(err.StatusCode)
   body := map[string]string{
     "error": err.Message,
