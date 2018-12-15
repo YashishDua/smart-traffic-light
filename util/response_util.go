@@ -9,6 +9,7 @@ type CustomFunction = func(*http.Request) (interface{}, *HTTPError)
 
 func Response(w http.ResponseWriter, payload interface{}) {
   w.Header().Set("Content-Type", "application/json")
+  w.Header().Set("Access-Control-Allow-Origin", "*")
   w.WriteHeader(http.StatusOK)
   json.NewEncoder(w).Encode(payload)
 }
