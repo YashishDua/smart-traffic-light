@@ -9,14 +9,12 @@ type CustomFunction = func(*http.Request) (interface{}, *HTTPError)
 
 func Response(w http.ResponseWriter, payload interface{}) {
   w.Header().Set("Content-Type", "application/json")
-  w.Header().Set("Access-Control-Allow-Origin", "*")
   w.WriteHeader(http.StatusOK)
   json.NewEncoder(w).Encode(payload)
 }
 
 func Error(w http.ResponseWriter, err *HTTPError) {
   w.Header().Set("Content-Type", "application/json")
-  w.Header().Set("Access-Control-Allow-Origin", "*")
   w.WriteHeader(err.StatusCode)
   body := map[string]string{
     "error": err.Message,
