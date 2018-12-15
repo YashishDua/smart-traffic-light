@@ -1,1 +1,1 @@
-“web: smart-signal”
+web: smart-signal
