@@ -13,6 +13,12 @@
 			"path": "github.com/go-chi/chi",
 			"revision": "def7567e149e3f66f2a3d62c6114e8d1731720c4",
 			"revisionTime": "2018-12-10T20:01:25Z"
+		},
+		{
+			"checksumSHA1": "n9ry/OHiteTTjZOeJHTrEwRSnms=",
+			"path": "github.com/go-chi/cors",
+			"revision": "07727c846d14299758e54a275dd8c81353c01960",
+			"revisionTime": "2018-08-16T15:23:45Z"
 		}
 	],
 	"rootPath": "smart-signal"
